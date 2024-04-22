@@ -31,7 +31,7 @@ p {
 }
 
 .container {
-  max-width: 1158px;
+  width: 320px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -200,7 +200,7 @@ p {
 /* -------------solutions end-------------- */
 
 .features {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .visually-hidden {
@@ -217,18 +217,20 @@ p {
 }
 
 .features-list {
-  gap: 24px;
+  gap: 72px;
   display: flex;
+  flex-wrap: wrap;
   padding-left: 0;
   margin: 0;
 }
 
 .features-list-item {
-  width: calc((100% -3 * 24px) / 4);
+  /* width: calc((100% -3 * 24px) / 4); */
+  width: 100%;
 }
 
 .rectangle {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   height: 112px;
@@ -242,16 +244,18 @@ p {
 }
 
 .features-list-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
   max-width: 264px;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .features-list-text {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -263,8 +267,8 @@ p {
 
 .team {
   background: #f4f4fd;
-  padding-bottom: 120px;
-  padding-top: 120px;
+  padding-bottom: 96px;
+  padding-top: 96px; 
 }
 
 .team-title {
@@ -280,7 +284,8 @@ p {
 
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
   margin: 0;
   padding-left: 0;
 }
@@ -776,4 +781,61 @@ visibility: hidden;
   background-color: #404bbf;
   border: none;
   fill: #F4F4FD;
+}
+
+/* =====================planshet============== */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+  }
+
+  .features-list {
+    padding: 120px 156px 120px 156px;
+    gap: 72px 24px;
+  }
+  
+  .features-list-item {
+    width: calc((100% - 24px) / 2);
+  
+  }
+  .rectangle {
+    
+  }
+
+  .team-list {
+    gap: 24px 64px;
+  }
+
+}
+/* ===================DESKTOP ================*/
+
+@media screen and (min-width: 1158px;) {
+  .container {
+    width: 1128px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+  }
+
+  .features-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: nowrap;
+  }
+  
+  .features-list-item {
+    width: calc((100% -3 * 24px) / 4);
+  }
+  .rectangle {
+    display: flex;
+  }
+
+  .team {
+    padding-bottom: 120px;
+    padding-top: 120px;
+  }
+
 }
