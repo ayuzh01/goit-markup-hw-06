@@ -270,13 +270,16 @@ p {
 }
 
 /* =====================features end========== */
+.team > .container {
+  width: 296px;
+}
 
 .team {
   background: #f4f4fd;
   /* padding-bottom: 120px;
   padding-top: 120px; */
-  padding-bottom: 96px;
-  padding-top: 96px;
+  padding: 96px 28px;
+
 }
 
 .team-title {
@@ -814,7 +817,7 @@ visibility: hidden;
   }
 
 .team > .container {
-
+width: 584px;
 }
 
 .portfolio-list {
@@ -859,6 +862,10 @@ gap: 72px 24px;
   .team-list-item {
     width: calc((100% - 72px) / 4);
   }
+
+.team > .container {
+  width: 1128px;
+}
 
   .portfolio {
     padding-top: 120px;
